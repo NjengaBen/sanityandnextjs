@@ -6,5 +6,6 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {},
+  darkMode: "class",
   plugins: [require("@tailwindcss/typography")],
 };
