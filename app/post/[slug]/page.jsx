@@ -12,15 +12,15 @@ const slugPage = async ({ params }) => {
   const data = await getData(params.slug);
   const portableTextComponents = {
     types: {
-      image: ({ value }) => {
+      image: ({ value }) => (
         <Image
           src={urlFor(value).url()}
           alt="Image"
           className="rounded-lg"
           width={800}
           height={800}
-        />;
-      },
+        />
+      ),
     },
   };
   return (
